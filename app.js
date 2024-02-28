@@ -5,7 +5,6 @@ const methodOverride = require('method-override');
 const usersRouter = require('./src/routes/user.js');
 const rootRouter = require('./src/routes/index');
 
-const path = require('path');
 const port = 3030;
 const app = express();
 

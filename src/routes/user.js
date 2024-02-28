@@ -14,17 +14,9 @@ router.post('/registro', async (req, res) => {
     return res.render('registro', { messages: { error: 'Email inválido' } });
   } else if (await req.db.collection('users').findOne({ email })) {
     return res.render('registro', { messages: { error: 'Email já cadastrado' } });
-  } else if (!name) {
-    return res.render('registro', { messages: { error: 'Nome origatorio' } });
-  }else if (!name) {
-    return res.render('registro', { messages: { error: 'email origatorio' } });
-  }else if (!name) {
-    return res.render('registro', { messages: { error: 'Senha origatoria' } });
   } else {
     await req.db.collection('users').insertOne({ name, email, password });
     return res.redirect('/login');
   }
- const userExists = await req.db.utils.findOneAsync({ email: email });
-
 } );
   module.exports = router;
