@@ -19,7 +19,7 @@ router.post('/', async (req, res) => {
     }
     try {
       req.session.user = user;
-      return res.redirect('/index'); // Certifique-se de que a rota '/' exista no seu aplicativo
+      return res.redirect('/index'); 
     } catch (error) {
       return res.render('login', { messages: { error: 'Erro ao fazer login' } });
     }
