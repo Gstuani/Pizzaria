@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Registro</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -60,14 +60,14 @@
       <div class="row gx-lg-5 align-items-center mb-5">
         <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
           <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-            Welcome to <br />
-            <span style="color: hsl(218, 81%, 75%)">Desphixs</span>
+            Bem vindo o(a) <br />
+            <span style="color: hsl(218, 81%, 75%)">Pizzaria theFato</span>
           </h1>
           <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Temporibus, expedita iusto veniam atque, magni tempora mollitia
             dolorum consequatur nulla, neque debitis eos reprehenderit quasi
-            ab ipsum nisi dolorem modi. Quos?
+            ab ipsum nisi dolorem modi. Quoaaas?
           </p>
         </div>
   
@@ -77,7 +77,7 @@
   
           <div class="card bg-glass">
             <div class="card-body px-4 py-5 px-md-5">
-              <form action="/register" method="POST">
+              <form action="/registro" method="POST">
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row">
                   
@@ -86,10 +86,10 @@
                       <strong><%= messages.error %> </strong>
                     </div>
                   <% } %> 
-                  <h1 class="mb-3 h3">Register</h1>
+                  <h1 class="mb-3 h3">Cadastro</h1>
                   <div class="col-md-12 mb-4">
                     <div class="form-outline">
-                      <label class="form-label" for="form3Example2">Full Name</label>
+                      <label class="form-label" for="form3Example2">Nome completo</label>
                       <input type="text" name="name" id="form3Example2" class="form-control" />
                     </div>
                   </div>
@@ -97,24 +97,24 @@
   
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                  <label class="form-label" for="form3Example3">Email address</label>
+                  <label class="form-label" for="form3Example3">Endereço de email</label>
                   <input type="email" name="email" id="form3Example3" class="form-control" />
                 </div>
   
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                  <label class="form-label" for="form3Example4">Password</label>
+                  <label class="form-label" for="form3Example4">Senha</label>
                   <input type="password" name="password" id="form3Example4" class="form-control" />
                 </div>
 
                 <!-- Submit button -->
                 <button type="submit" class="btn btn-primary btn-block mb-4">
-                  Sign up
+                  Cadastrar
                 </button>
   
                 <!-- Register buttons -->
                 <div class="text-center">
-                  <p>Already have an account? <a href="/login">Login</a></p>
+                  <p>Já tem uma conta? <a href="/login">Login</a></p>
                 
                 </div>
               </form>
