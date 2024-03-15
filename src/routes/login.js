@@ -19,7 +19,7 @@ router.post('/', async (req, res) => {
     }
     try {
       req.session.user = user;
-      return res.redirect('/index'); 
+      return res.redirect('/cardapio'); 
     } catch (error) {
       return res.render('login', { messages: { error: 'Erro ao fazer login' } });
     }
